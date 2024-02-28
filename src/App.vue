@@ -9,6 +9,7 @@ import Sellers from './constant/sellers'
 import Hero from './components/hero/hero.vue';
 import Grid from './components/grid/grid.vue'
 import Footer from './components/footer/footer.vue'
+import Banner from './components/banner/banner.vue'
 import { reactive, } from 'vue'
 
 const petsData = reactive(Pets)
@@ -32,6 +33,7 @@ const sellersData = reactive(Sellers)
         </div>
       </div>
     </Grid>
+    <Banner :imageLeft="true" />
     <Grid :items="productsData" :hasGift="true" :isBlog="false" :isSingle="false">
       <div class="section__header">
         <div class="section__title">
@@ -53,6 +55,7 @@ const sellersData = reactive(Sellers)
         </div>
       </div>
     </Grid>
+    <Banner :imageLeft="false" />
     <Grid :items="blogsData" :hasGift="false" :isBlog="true" :isSingle="false">
       <div class="section__header">
         <div class="section__title">

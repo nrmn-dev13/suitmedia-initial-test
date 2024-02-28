@@ -73,7 +73,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
 
     &.isBlog {
       .img-wrapper {
-        width: 364px;
+        width: 100%;
         height: 260px;
       }
 
@@ -112,7 +112,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
     }
 
     .img-wrapper {
-      width: 264px;
+      width: 100%;
       height: 264px;
       border-radius: 10px;
       overflow: hidden;
