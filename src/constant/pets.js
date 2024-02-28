@@ -5,7 +5,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 6900000,
-    img: '/src/assets/pr-1.png'
+    img: '/assets/pr-1.png'
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 3900000,
-    img: '/src/assets/pr-8.png'
+    img: '/assets/pr-8.png'
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const Pets = [
     genre: 'Female',
     age: '02 months',
     price: 4000000,
-    img: '/src/assets/pr-7.png'
+    img: '/assets/pr-7.png'
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 8900000,
-    img: '/src/assets/pr-6.png'
+    img: '/assets/pr-6.png'
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 7900000,
-    img: '/src/assets/pr-2.png'
+    img: '/assets/pr-2.png'
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 9000000,
-    img: '/src/assets/pr-5.png'
+    img: '/assets/pr-5.png'
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 6500000,
-    img: '/src/assets/pr-4.png'
+    img: '/assets/pr-4.png'
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const Pets = [
     genre: 'Male',
     age: '02 months',
     price: 5000000,
-    img: '/src/assets/pr-3.png'
+    img: '/assets/pr-3.png'
   }
 ]
 

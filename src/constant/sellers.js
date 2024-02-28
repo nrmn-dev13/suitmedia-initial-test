@@ -1,31 +1,31 @@
 const Sellers = [
   {
     id: 1,
-    img: '/src/assets/seller-1.png'
+    img: '/assets/seller-1.png'
   },
   {
     id: 2,
-    img: '/src/assets/seller-2.png'
+    img: '/assets/seller-2.png'
   },
   {
     id: 3,
-    img: '/src/assets/seller-3.png'
+    img: '/assets/seller-3.png'
   },
   {
     id: 4,
-    img: '/src/assets/seller-4.png'
+    img: '/assets/seller-4.png'
   },
   {
     id: 5,
-    img: '/src/assets/seller-5.png'
+    img: '/assets/seller-5.png'
   },
   {
     id: 6,
-    img: '/src/assets/seller-6.png'
+    img: '/assets/seller-6.png'
   },
   {
     id: 7,
-    img: '/src/assets/seller-7.png'
+    img: '/assets/seller-7.png'
   },
 ]
 
