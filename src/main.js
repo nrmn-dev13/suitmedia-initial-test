@@ -17,6 +17,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas,far,fab)
 
 const app = createApp(App)
-app.component('fa', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
 

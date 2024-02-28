@@ -5,14 +5,36 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.button {
+  padding: 12px 28px;
+  background-color: #003459;
+  color: #fff;
+  border-radius: 57px;
+}
+section {
+  background-color: white;
+}
+.button.button--outline {
+  padding: 12px 28px;
+  background-color: transparent;
+  color: #003459;
+  border-radius: 57px;
+  border: 1px solid #003459;
+}
+.button.button--sm {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
