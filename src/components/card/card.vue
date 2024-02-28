@@ -119,7 +119,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
       margin-bottom: 16px;
 
       .img {
-        width: auto;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
