@@ -17,7 +17,7 @@ const sellersData = reactive(Sellers)
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div>
     <!-- <HelloWorld msg="Vite + Vue" /> -->
     <Hero />
     <Grid :items="petsData" :hasGift="false" :isBlog="false">

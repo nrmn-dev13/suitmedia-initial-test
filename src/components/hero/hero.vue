@@ -4,7 +4,7 @@ import LogoOne from '../../assets/banner-1.svg'
 
 </script>
 <template>
-  <section>
+  <section class="section section__hero">
     <Header/>
     <!-- <p>
       test
@@ -28,6 +28,10 @@ import LogoOne from '../../assets/banner-1.svg'
   </section>
 </template>
 <style scoped lang="scss">
+.section__hero {
+  background-color: #FCEED5;
+  padding: 0 130px 0;
+}
 .main--hero {
   display: flex;
   .content {
