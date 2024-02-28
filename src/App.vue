@@ -8,6 +8,7 @@ import Sellers from './constant/sellers'
 
 import Hero from './components/hero/hero.vue';
 import Grid from './components/grid/grid.vue'
+import Footer from './components/footer/footer.vue'
 import { reactive, } from 'vue'
 
 const petsData = reactive(Pets)
@@ -63,6 +64,7 @@ const sellersData = reactive(Sellers)
         </div>
       </div>
     </Grid>
+    <Footer />
   </div>
 </template>
 
