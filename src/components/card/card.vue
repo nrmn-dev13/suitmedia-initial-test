@@ -3,7 +3,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
 
 </script>
 <template>
-  <div class="card" v-for="list in props.lists" :key="list.id">
+  <div class="card" :class="{ 'isSingle': isSingle, }" v-for="list in props.lists" :key="list.id">
     <div class="card--single" v-if="isSingle">
       <figure class="img-wrapper">
         <img class="img" :src="list.img" alt="">
@@ -51,6 +51,19 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
   padding: 8px;
   border-radius: 12px;
   box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+
+  &.isSingle {
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card--single {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .card--multiContent {
     display: flex;
@@ -179,5 +192,4 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
       }
     }
   }
-}
-</style>
+}</style>
