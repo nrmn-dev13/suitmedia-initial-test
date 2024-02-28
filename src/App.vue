@@ -1,15 +1,19 @@
 <script setup>
 //import HelloWorld from './components/HelloWorld.vue'
 // import Header from './components/header/header.vue';
-import hero from './components/hero/hero.vue';
+import Pets from './constant/pets'
+import Hero from './components/hero/hero.vue';
+import Grid from './components/grid/grid.vue'
+import {reactive} from 'vue'
+
+const data = reactive(Pets)
 </script>
 
 <template>
   <div class="container mx-auto">
     <!-- <HelloWorld msg="Vite + Vue" /> -->
-    <section class="section section--hero">
-      <hero />
-    </section>
+    <Hero />
+    <Grid :items="data"/>
   </div>
 </template>
 
