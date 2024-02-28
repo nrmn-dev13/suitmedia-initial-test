@@ -1,11 +1,15 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+// import Header from './components/header/header.vue';
+import hero from './components/hero/hero.vue';
 </script>
 
 <template>
   <div class="container mx-auto">
-    <HelloWorld msg="Vite + Vue" />
-    <h1 class="text-blue">Test</h1>
+    <!-- <HelloWorld msg="Vite + Vue" /> -->
+    <section class="section section--hero">
+      <hero />
+    </section>
   </div>
 </template>
 
