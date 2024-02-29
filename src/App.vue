@@ -29,7 +29,7 @@ const sellersData = reactive(Sellers)
           <span class="subtitle">Take a look at some of our pets</span>
         </div>
         <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More</button>
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -41,7 +41,7 @@ const sellersData = reactive(Sellers)
           <span class="subtitle">Out Products</span>
         </div>
         <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More</button>
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -51,7 +51,7 @@ const sellersData = reactive(Sellers)
           <div class="title">Proud to be part of <span class="bold">Pet Sellers</span> </div>
         </div>
         <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More</button>
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -63,7 +63,7 @@ const sellersData = reactive(Sellers)
           <span class="subtitle">Useful Pet Knowldege</span>
         </div>
         <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More</button>
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -102,6 +102,12 @@ const sellersData = reactive(Sellers)
       letter-spacing: 0em;
       text-align: left;
 
+    }
+  }
+
+  .section__action {
+    .fa-chevron-right {
+      font-size: 10px;
     }
   }
 }

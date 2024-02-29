@@ -59,7 +59,7 @@ import LogoOne from '../../assets/banner-1.svg'
     border-radius: 99px;
     z-index: 0;
     transform: rotate(56.47deg);
-    bottom: -97%;
+    bottom: -105%;
     left: 0%;
   }
 }
@@ -74,6 +74,7 @@ import LogoOne from '../../assets/banner-1.svg'
 
   .content {
     width: 50%;
+    margin-top: 30px;
 
     h1 {
       color: #003459;
@@ -118,6 +119,20 @@ import LogoOne from '../../assets/banner-1.svg'
       letter-spacing: 0em;
       text-align: left;
       margin-bottom: 34px;
+    }
+
+    .icon-wrapper {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      border: 1px solid #003459;
+      justify-content: center;
+      align-items: center;
+
+      .fa-play {
+        font-size: 10px;
+      }
     }
   }
 

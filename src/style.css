@@ -35,6 +35,12 @@ section {
   letter-spacing: 0em;
   text-align: left;
 }
+.button.button--hasIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

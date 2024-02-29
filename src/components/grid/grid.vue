@@ -4,7 +4,7 @@ const props = defineProps(['items', 'hasGift', 'isBlog', 'isSingle'])
 
 </script>
 <template>
-  <section class="section container mx-auto">
+  <section class="section section__grid container mx-auto">
     <slot>
 
     </slot>
@@ -22,3 +22,9 @@ const props = defineProps(['items', 'hasGift', 'isBlog', 'isSingle'])
     </div>
   </section>
 </template>
+
+<style scoped lang="scss">
+.section__grid {
+  margin-bottom: 60px;
+}
+</style>
