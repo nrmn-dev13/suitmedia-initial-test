@@ -14,16 +14,16 @@ import Logo from '../../assets/logo.svg'
       <nav class="footer-nav">
         <ul class="primary-nav">
           <li>
-            <a href="" class="link text-blue">Home</a>
+            <a href="" class="link">Home</a>
           </li>
           <li>
-            <a href="" class="link text-blue">Category</a>
+            <a href="" class="link">Category</a>
           </li>
           <li>
-            <a href="" class="link text-blue">About</a>
+            <a href="" class="link">About</a>
           </li>
           <li>
-            <a href="" class="link text-blue">Contact</a>
+            <a href="" class="link">Contact</a>
           </li>
         </ul>
         <ul class="social-nav">
@@ -56,12 +56,13 @@ import Logo from '../../assets/logo.svg'
           </a>
         </li>
         <li>
-          <a href="" class="link copyright--link">© 2022 Monito. All rights reserved.</a>
-        </li>
-        <li>
-          <a href="" class="link copyright--link">Terms of Service</a>
+          <a href="" class="link copyright--link mr-4">Terms of Service</a>
           <a href="" class="link copyright--link">Privacy Policy</a>
         </li>
+        <li>
+          <a href="" class="link copyright--link">© 2022 Monito. All rights reserved.</a>
+        </li>
+
       </ul>
     </section>
   </footer>
@@ -81,6 +82,7 @@ import Logo from '../../assets/logo.svg'
     padding-bottom: 40px;
     margin-bottom: 40px;
     position: relative;
+
     &::after {
       content: '';
       position: absolute;
@@ -91,33 +93,68 @@ import Logo from '../../assets/logo.svg'
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .footer-nav {
+      flex-direction: column;
+
+      .primary-nav {
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   .primary-nav {
     gap: 60px;
     display: flex;
+
+    .link {
+      color: #00171F;
+    }
   }
 
   .social-nav {
     gap: 40px;
     display: flex;
+
     .social--link {
-      color: #003459;
+      color: #00171F;
     }
   }
 
-  ul.footer--bottom {
+  @media only screen and (max-width: 600px) {
+    .footer--bottom {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      li {
+        &:first-child {
+          position: relative !important;
+          left: 0 !important;
+          top: 0 !important;
+          transform: translate(0, 0) !important;
+        }
+      }
+    }
+  }
+
+  .footer--bottom {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
     position: relative;
+    flex-direction: row-reverse;
 
     li {
       &:first-child {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -90%);
       }
     }
+
     .copyright--link {
       color: #667479;
     }
@@ -161,6 +198,31 @@ import Logo from '../../assets/logo.svg'
         flex: 1 1 auto;
         padding: 14px 28px;
         color: #99A2A5;
+      }
+      .button {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .subscribe-box {
+      flex-direction: column;
+      margin: 40px 16px;
+      padding: 16px;
+
+      .title {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .subscribe-wrapper {
+        width: 100%;
+        flex-direction: column;
       }
     }
   }
