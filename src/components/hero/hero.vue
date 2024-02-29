@@ -64,6 +64,17 @@ import LogoOne from '../../assets/banner-1.svg'
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .section__hero {
+    padding: 0 16px 0;
+
+    .top-square {
+      top: -92%;
+      left: -50%;
+    }
+  }
+}
+
 .main--hero {
   display: flex;
 
@@ -131,7 +142,7 @@ import LogoOne from '../../assets/banner-1.svg'
       align-items: center;
 
       .fa-play {
-        font-size: 10px;
+        font-size: 8px;
       }
     }
   }
@@ -203,4 +214,47 @@ import LogoOne from '../../assets/banner-1.svg'
     }
   }
 }
-</style>
+
+@media only screen and (max-width: 600px) {
+  .main--hero {
+    flex-direction: column;
+
+    .content {
+      width: 100%;
+
+      h1 {
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 60px;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    }
+
+    .image-wrapper {
+      width: 100%;
+
+      .box--blue {
+        left: 0;
+      }
+
+      .box--yellow {
+        left: -1%;
+      }
+    }
+  }
+}</style>
