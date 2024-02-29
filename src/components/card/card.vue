@@ -88,6 +88,8 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
           line-height: 16px;
           letter-spacing: 0em;
           text-align: left;
+          margin-bottom: 10px;
+          display: inline-block;
         }
 
         .card__blog--title {
@@ -97,6 +99,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
           line-height: 24px;
           letter-spacing: 0em;
           text-align: left;
+          margin-bottom: 6px;
         }
 
         .card__blog--description {

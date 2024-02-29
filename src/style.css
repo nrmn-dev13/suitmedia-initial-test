@@ -12,6 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: 'SVN-Gilroy Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SVN-Gilroy Light'), url('svn-gilroy-light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'SVN-Gilroy Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SVN-Gilroy Bold'), url('svn-gilroy-bold.woff') format('woff');
+  }
 .button {
   padding: 12px 28px;
   background-color: #003459;
@@ -40,6 +54,18 @@ section {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+.col-4 {
+  @apply grid-cols-2 lg:grid-cols-4
+}
+.col-3{
+  @apply grid-cols-1 lg:grid-cols-3
+}
+.col-7 {
+  @apply grid-cols-2 lg:grid-cols-7
+}
+.onlyDesktop {
+  @apply hidden lg:block
 }
 @tailwind base;
 @tailwind components;

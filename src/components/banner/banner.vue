@@ -5,7 +5,7 @@ const props = defineProps(['imageLeft'])
 
 </script>
 <template>
-  <section class="section container mx-auto">
+  <section class="section container mx-auto" :class="{'onlyDesktop': !imageLeft}">
     <div class="banner" :class="{ 'banner-right': !imageLeft }">
       <div v-if="imageLeft" class="banner-content">
         <figure class="image-wrapper">
