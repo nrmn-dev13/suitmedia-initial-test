@@ -177,6 +177,10 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 6px;
+    .icon-wrapper {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   @media only screen and (max-width: 600px) {
