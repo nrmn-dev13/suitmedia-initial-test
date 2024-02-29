@@ -4,7 +4,7 @@ const Pets = [
     name: 'MO231 - Pomeranian White',
     genre: 'Male',
     age: '02 months',
-    price: 6900000,
+    price: '6.900.000',
     img: '/assets/pr-1.png'
   },
   {
@@ -12,7 +12,7 @@ const Pets = [
     name: 'MO502 - Poodle Tiny Yellow',
     genre: 'Male',
     age: '02 months',
-    price: 3900000,
+    price: '3.900.000',
     img: '/assets/pr-8.png'
   },
   {
@@ -20,7 +20,7 @@ const Pets = [
     name: 'MO102 - Poodle Tiny Sepia',
     genre: 'Female',
     age: '02 months',
-    price: 4000000,
+    price: '4.000.000',
     img: '/assets/pr-7.png'
   },
   {
@@ -28,7 +28,7 @@ const Pets = [
     name: 'MO512 - Alaskan Malamute Grey',
     genre: 'Male',
     age: '02 months',
-    price: 8900000,
+    price: '8.900.000',
     img: '/assets/pr-6.png'
   },
   {
@@ -36,7 +36,7 @@ const Pets = [
     name: 'MO231 - Pembroke Corgi Cream',
     genre: 'Male',
     age: '02 months',
-    price: 7900000,
+    price: '7.900.000',
     img: '/assets/pr-2.png'
   },
   {
@@ -44,7 +44,7 @@ const Pets = [
     name: 'MO502 - Pembroke Corgi Tricolor',
     genre: 'Male',
     age: '02 months',
-    price: 9000000,
+    price: '9.000.000',
     img: '/assets/pr-5.png'
   },
   {
@@ -52,7 +52,7 @@ const Pets = [
     name: 'MO231 - Pomeranian White',
     genre: 'Male',
     age: '02 months',
-    price: 6500000,
+    price: '6.500.000',
     img: '/assets/pr-4.png'
   },
   {
@@ -60,7 +60,7 @@ const Pets = [
     name: 'MO512 - Poodle Tiny Dairy Cow',
     genre: 'Male',
     age: '02 months',
-    price: 5000000,
+    price: '5.000.000',
     img: '/assets/pr-3.png'
   }
 ]

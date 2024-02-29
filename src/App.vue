@@ -28,8 +28,9 @@ const sellersData = reactive(Sellers)
           <div class="title">What's new?</div>
           <span class="subtitle">Take a look at some of our pets</span>
         </div>
-        <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
+        <div class="section__action onlyDesktop">
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon
+              :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -40,8 +41,9 @@ const sellersData = reactive(Sellers)
           <div class="title">Hard to choose right products for your pets?</div>
           <span class="subtitle">Out Products</span>
         </div>
-        <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
+        <div class="section__action onlyDesktop">
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon
+              :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -50,8 +52,9 @@ const sellersData = reactive(Sellers)
         <div class="section__title">
           <div class="title">Proud to be part of <span class="bold">Pet Sellers</span> </div>
         </div>
-        <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
+        <div class="section__action onlyDesktop">
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon
+              :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -62,8 +65,9 @@ const sellersData = reactive(Sellers)
           <div class="title">You already know?</div>
           <span class="subtitle">Useful Pet Knowldege</span>
         </div>
-        <div class="section__action">
-          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon :icon="['fas', 'chevron-right']" /></button>
+        <div class="section__action onlyDesktop">
+          <button class="button button--outline button--hasIcon button--sm">View More <font-awesome-icon
+              :icon="['fas', 'chevron-right']" /></button>
         </div>
       </div>
     </Grid>
@@ -102,6 +106,30 @@ const sellersData = reactive(Sellers)
       letter-spacing: 0em;
       text-align: left;
 
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .section__title {
+      .title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: black;
+
+        .bold {
+          font-weight: 700;
+          color: #003459;
+          font-size: 24px;
+        }
+      }
+
+      .subtitle {
+        color: #003459;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+      }
     }
   }
 

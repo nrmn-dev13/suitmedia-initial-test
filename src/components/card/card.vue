@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
+import giftLogo from '../../assets/gift.svg'
 
 </script>
 <template>
@@ -40,7 +41,12 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
           </p>
         </div>
         <div class="card__price">{{ list.price }} VND</div>
-        <div v-if="hasGift" class="card__gift">Free Toys & Stickers</div>
+        <div v-if="hasGift" class="card__gift">
+          <figure class="image-wrapper">
+            <img :src="giftLogo" alt="" class="img">
+          </figure>
+          <span class="gift--text">{{ list.gift }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -160,6 +166,7 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
         letter-spacing: 0em;
         text-align: left;
         color: black;
+        margin-bottom: 4px;
       }
 
       .card__price {
@@ -177,22 +184,75 @@ const props = defineProps(['lists', 'hasGift', 'isBlog', 'isSingle'])
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: black;
+        color: #667479;
         position: relative;
+        margin-bottom: 4px;
 
         span {
           font-weight: 700;
         }
       }
 
-      .card__title {
-        font-size: 16px;
+      .card__gift {
+        margin-top: 10px;
+        background-color: #FCEED5;
+        border-radius: 8px;
+        display: flex;
+        font-size: 14px;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: black;
+        color: #002A48;
+        padding: 8px 10px;
+        align-items: center;
+        justify-content: flex-start;
+        .gift--text {
+          position: relative;
+          margin-left: 22px;
+          &::after {
+            content: "";
+            width: 3px;
+            height: 3px;
+            background-color: #667479;
+            display: flex;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: 45%;
+            transform: translateX(-50%);
+          }
+        }
       }
     }
   }
-}</style>
+
+  @media only screen and (max-width: 600px) {
+    .card--multiContent {
+      .img-wrapper {
+        height: 164px;
+      }
+
+      .card__info {
+        .card__title {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+        }
+
+        .card__sub-info {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+        }
+
+        .card__price {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+</style>

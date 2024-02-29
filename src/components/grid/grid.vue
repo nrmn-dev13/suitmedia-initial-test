@@ -4,7 +4,7 @@ const props = defineProps(['items', 'hasGift', 'isBlog', 'isSingle', 'sectionNam
 
 </script>
 <template>
-  <section class="section section__grid container mx-auto" :class="{'onlyDesktop' : isSingle}">
+  <section class="section section__grid container mx-auto px-4" :class="{'onlyDesktop' : isSingle}">
     <slot>
 
     </slot>
